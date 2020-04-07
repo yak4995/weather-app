@@ -4,7 +4,7 @@ import WeatherRepository from "../../../core/repositories/weather.repository";
 import { CacheService } from "../../../core/services/cache.service";
 import Weather from "../../../core/entities/weather.entity";
 import WeatherGateway from "../../../core/gateways/weather.gateway";
-import { CityImplService } from "infrastructure/city/services/cityImpl.service";
+import { CityImplService } from "../../city/services/cityImpl.service";
 
 @Injectable()
 export class WeatherImplService extends WeatherService {
