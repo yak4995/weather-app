@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "2d26ff9f-bdbb-4368-ae47-de5dcea74760",
+		"name": "Weather App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/city",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"city"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "current-weather-by-city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/weather/current/byCity/Kyiv",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weather",
+						"current",
+						"byCity",
+						"Kyiv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "current-weather-by-coords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/weather/current/byCoords/30.73/46.48",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weather",
+						"current",
+						"byCoords",
+						"30.73",
+						"46.48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weather-history-by-city-name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/weather/Kyiv",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weather",
+						"Kyiv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "persist today weather to db",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/weather",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"weather"
+					]
+				},
+				"description": " (should be called by cron with secret key, but not in this version)"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
